@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/commentsRecyclerView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/blogTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blog Title"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/blogTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Published on: March 24, 2023"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/blogWriterTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By: John Doe"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/blogContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="16dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"/>
+
+</RelativeLayout>

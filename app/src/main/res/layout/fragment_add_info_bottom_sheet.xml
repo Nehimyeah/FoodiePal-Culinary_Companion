@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_add_info_bottom_sheet.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Information"/>
+
+    <Button
+        android:id="@+id/btnAddInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Information"/>
+</LinearLayout>

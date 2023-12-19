@@ -1,0 +1,41 @@
+<!-- res/layout/meal_plan_item_layout.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Meal Title -->
+        <TextView
+            android:id="@+id/mealTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Healthy Breakfast"
+            android:textColor="@color/colorPrimary"/>
+
+        <!-- Ingredients -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ingredientsTextView"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- Instructions -->
+        <TextView
+            android:id="@+id/instructionsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Instructions:\n1. Step 1\n2. Step 2\n3. Step 3"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,75 @@
+<!-- res/layout/blog_item_layout.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Blog Title -->
+        <TextView
+            android:id="@+id/blogTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:text="The Art of Mobile App Design"
+            android:textColor="@color/colorPrimary"/>
+
+        <!-- Author and Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/authorTextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="By Alice Developer"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Jan 1, 2023"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- Content Snippet -->
+        <TextView
+            android:id="@+id/contentSnippetTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp"
+            android:text="Designing mobile apps requires a combination of creativity and usability. Explore the principles and best practices for creating visually appealing and user-friendly mobile app interfaces."
+            android:textColor="@android:color/black"/>
+
+        <!-- Comment Section -->
+        <TextView
+            android:id="@+id/commentSectionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="Comments (2)"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
